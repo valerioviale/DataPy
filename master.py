@@ -6,7 +6,7 @@ def get_top_trending_repositories():
         "q": "language:python",
         "sort": "stars",
         "order": "desc",
-        "per_page": 5  # Change this to get more repositories
+        "per_page": 14  # Change this to get more repositories
     }
     response = requests.get(url, params=params)
     data = response.json()
